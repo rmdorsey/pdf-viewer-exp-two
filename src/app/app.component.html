@@ -1,1 +1,12 @@
+<div>PDF VIEWER TEST</div>
+
+<ngx-extended-pdf-viewer
+  [src]="'assets/29729288.pdf'"
+  [textLayer]="true"
+  [showHandToolButton]="true"
+  (pdfLoaded)="onPdfLoaded()"
+  (update-find-control-state)="onUpdateFindControlState($event)"
+>
+</ngx-extended-pdf-viewer>
+
 <router-outlet></router-outlet>
